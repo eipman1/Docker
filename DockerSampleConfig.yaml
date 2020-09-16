@@ -6,15 +6,15 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: Dockersampleconfig
+      app: Docker
   template:
     metadata:
       labels:
-        app: Dockersampleconfig
+        app: Docker
     spec:
       containers:
-      - name: dockersamplerepos
-        image: cde2dockersample.azurecr.io/dockersamplerepos:latest
+      - name: 856733dockere
+        image: 856733dockereacr.azurecr.io/856733dockere:17
         ports:
         - containerPort: 8080
       imagePullSecrets:
@@ -30,4 +30,4 @@ spec:
   ports:
   - port: 80
   selector:
-    app: Dockersampleconfig
+    app: Docker
